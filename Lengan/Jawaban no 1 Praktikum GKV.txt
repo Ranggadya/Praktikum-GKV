@@ -1,0 +1,18 @@
+Jawaban no 1 Praktikum GKV
+Struktur lengan dalam program ini terdiri dari empat bagian utama:
+
+Lengan atas, yang menjadi titik awal pergerakan.
+Lengan bawah, yang terhubung dengan lengan atas dan dapat bergerak secara independen.
+Telapak tangan, yang terhubung dengan lengan bawah dan bisa berputar sendiri.
+Jari, yang merupakan bagian terkecil dan dapat bergerak terpisah.
+Setiap bagian ini digambar menggunakan fungsi glutSolidCube(), dengan transformasi menggunakan glTranslatef() (untuk menggeser posisi) dan glRotatef() (untuk memutar bagian lengan sesuai sumbu).
+
+Pergerakan lengan dikendalikan melalui fungsi keyboard(), di mana pengguna dapat menekan tombol:
+
+'s' dan 'S' untuk menggerakkan lengan atas.
+'e' dan 'E' untuk menggerakkan lengan bawah.
+'t' dan 'T' untuk memutar telapak tangan.
+'j' dan 'J' untuk menggerakkan jari.
+Fungsi display() bertanggung jawab untuk menggambar seluruh struktur lengan berdasarkan perubahan sudut rotasi.
+
+Sedangkan main() menginisialisasi OpenGL, membuat jendela tampilan, serta menjalankan loop utama menggunakan glutMainLoop(), sehingga program terus berjalan dan memperbarui tampilan setiap kali pengguna memberikan input.
